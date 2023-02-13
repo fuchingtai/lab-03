@@ -134,6 +134,9 @@ def add_mail_route():
     """
     Summary: Adds a new mail entry to the json file
 
+    Arg
+        none
+
     Returns:
         str: The id of the new mail entry
     """
@@ -149,7 +152,7 @@ def delete_mail_route(mail_id: str):
     Summary: Deletes a mail entry from the json file
 
     Args:
-        mail_id (str): The id of the mail entry to delete
+        mail_id (str): The id of the mail entry to delete in form of a string
 
     Returns:
         bool: True if the mail was deleted, False otherwise
@@ -166,7 +169,7 @@ def get_mail_route(mail_id: str):
     Summary: Gets a mail entry from the json file
 
     Args:
-        mail_id (str): The id of the mail entry to get
+        mail_id (str): The id of the mail entry to get in form of a string
 
     Returns:
         dict: A dictionary representing the mail entry if it exists, None otherwise
@@ -181,7 +184,7 @@ def get_inbox_route(recipient: str):
     Summary: Gets all mail entries for a recipient from the json file
 
     Args:
-        recipient (str): The recipient of the mail
+        recipient (str): The recipient of the mail in form of a string
 
     Returns:
         list: A list of dictionaries representing the mail entries
@@ -198,7 +201,7 @@ def get_all_mail_entries(sender: str):
     Summary: Gets all mail entries for a sender from the json file
 
     Args:
-        sender (str): The sender of the mail
+        sender (str): The sender of the mail in form of a string
 
     Returns:
         list: A list of dictionaries representing the mail entries
